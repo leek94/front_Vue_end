@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import Ch02ComponentRouting from './Ch02ComponentRouting';
 import Ch03DataBinding from './Ch03DataBinding';
 import Ch04EventHandlingWatch from './Ch04EventHandlingWatch'
-
+import Ch05DataDelivery from './Ch05DataDelivery'
 const routes = [
   {
     path: '/',
@@ -14,7 +14,8 @@ const routes = [
   // 구조 분해 - 값을 추가할 때 사용함 (배열의 항목을 넣는 것임)
   ...Ch02ComponentRouting, 
   ...Ch03DataBinding,
-  ...Ch04EventHandlingWatch
+  ...Ch04EventHandlingWatch,
+  ...Ch05DataDelivery
 ]
 
 const router = createRouter({

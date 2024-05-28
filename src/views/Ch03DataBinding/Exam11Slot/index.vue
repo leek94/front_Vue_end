@@ -9,7 +9,7 @@
         <!-- Dialog는 기본적으로 안보임 show 했을 때만 보임 -->
         <!-- 기본적으로 dialog나 -->
         <DialogA id="dialogA"/>
-        <DialogB id="dialogB" @close="hideDialogB"/>
+        <DialogB id="dialogB" @close="hideDialogB"/> <!--모달 닫는 자바스크립트를 FallThrough 속성으로 넘김 -->
         <DialogC id="dialogC" @close="hideDialogC"/>
 
     </div>

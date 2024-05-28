@@ -4,20 +4,20 @@
         <div class="card-body">
             <div class="mb-3">
                 <h6 class="mb-3">[이벤트 처리]</h6>
-                <!-- 함수 참조 -->
+                                                                <!-- 함수 참조 -->
                 <button class="btn btn-danger btn-sm me-2" @click="handleBtn1">버튼1</button>
-                <!-- 함수 호출 매개값 있음 / 내장 이벤트 객체 전달 -->
+                                                         <!-- 함수 호출 매개값 있음 / 내장 이벤트 객체 전달 -->
                 <button class="btn btn-info btn-sm me-2" @click="handleBtn2('vue is good', $event)" >버튼1</button>
             </div>
 
             <div class="input-group mb-3">
-                <span class="input-group-text">아이디</span>
+                <span class="input-group-text">아이디1</span>
                 <input class="form-control" type="text" name="userID" :value="userID" @keyup="handleInput($event)"/>
-                <!-- v-model을 사용하지 않았기 때문에 단방향  -->
+                <!-- v-model을 사용하지 않았기 때문에 단방향 바인딩 -->
             </div>
 
             <div class="input-group mb-3">
-                <span class="input-group-text">아이디</span>
+                <span class="input-group-text">아이디2</span>
                 <input class="form-control" type="text" name="userID" v-model="userID"/>
                 <!-- 양방향 바인딩  -->
             </div>
@@ -66,7 +66,7 @@ let userID = ref("");
 function handleInput(event){
     console.log("event.target.name" + event.target.name); // 발생한 태그의 이름을 확인
     console.log("event.target.value" + event.target.value);
-    // 양방향을 사용하지 않아서 필요함
+    // 양방향을 사용하지 않아서 필요함 -> 단방향 매핑이라서 이런식으로 값을 넣어줌
     userID.value = event.target.value;
 }
 

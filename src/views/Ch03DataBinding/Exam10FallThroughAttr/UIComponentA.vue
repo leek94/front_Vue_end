@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card"> <!-- 이 위치에 id가 포함됨-->
         <div class="card-header">UIComponentA</div>
         <div class="card-body">
             <div :class="prop.class" :style="prop.style" @click="emit('click')">

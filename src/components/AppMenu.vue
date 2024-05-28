@@ -163,7 +163,7 @@
                 Ch04. EventHandling & Watch
                 </button>
             </h2>
-            <div id="collapse4" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -178,6 +178,29 @@
                             Exam02Watch: 감시 처리
                         </RouterLink>
                     </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapse5" 
+                aria-expanded="true" aria-controls="collapse5">
+                Ch05. EventHandling & Watch
+                </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                       <RouterLink to="/Ch05DataDelivery/Exam01Props"
+                                 class="nav-link">
+                            Exam01Props: 부모에서 자식으로(Props 방식)
+                        </RouterLink>
+                    </li>
+                    
                 </ul>
                 </div>
             </div>
