@@ -8,7 +8,7 @@
                 Ch01. Vue 시작
                 </button>
             </h2>
-            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                 <ul class="nav nav-underline flex-column">
                     <li class="nav-item">
@@ -27,7 +27,7 @@
                 Ch02. Component & Routing
                 </button>
             </h2>
-            <div id="collapse2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -80,7 +80,7 @@
                 Ch03. DataBinding
                 </button>
             </h2>
-            <div id="collapse3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -158,18 +158,24 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button fw-bold" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#collapse3" 
-                aria-expanded="true" aria-controls="collapse3">
+                data-bs-toggle="collapse" data-bs-target="#collapse4" 
+                aria-expanded="true" aria-controls="collapse4">
                 Ch04. EventHandling & Watch
                 </button>
             </h2>
-            <div id="collapse3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div id="collapse4" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                       <RouterLink to="/Ch03DataBinding/Exam01Expressions"
+                       <RouterLink to="/Ch04EventHandlingWatch/Exam01EventHandling"
                                  class="nav-link">
                             Exam01EventHandling: 이벤트 처리
+                        </RouterLink>
+                    </li>
+                    <li class="nav-item">
+                       <RouterLink to="/Ch04EventHandlingWatch/Exam02Watch"
+                                 class="nav-link">
+                            Exam02Watch: 감시 처리
                         </RouterLink>
                     </li>
                 </ul>
