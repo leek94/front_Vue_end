@@ -206,6 +206,12 @@
                             Exam02EventEmit: 자식에서 부모로 (Event 방식)
                         </RouterLink>
                     </li>
+                    <li class="nav-item">
+                       <RouterLink to="/Ch05DataDelivery/Exam03ProvideInject"
+                                 class="nav-link">
+                            Exam03ProvideInject: 하위 컴포넌트 전체에 데이터 제공
+                        </RouterLink>
+                    </li>
                     
                 </ul>
                 </div>

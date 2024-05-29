@@ -9,6 +9,11 @@ const routes =[
         component: () => import (/* webpackChunkName: "Ch05DataDelivery" */ '@/views/Ch05DataDelivery/Exam02EventEmit')
     },
 
+    {
+        path: "/Ch05DataDelivery/Exam03ProvideInject",
+        component: () => import (/* webpackChunkName: "Ch05DataDelivery" */ '@/views/Ch05DataDelivery/Exam03ProvideInject')
+    },
+
 
 ];
 
