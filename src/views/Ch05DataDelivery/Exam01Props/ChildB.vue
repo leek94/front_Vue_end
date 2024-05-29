@@ -20,7 +20,7 @@ const prop = defineProps(["productNo", "productKind", "product", "no", "kind"]);
 
 console.log("productNo: " + prop.productNo, typeof(prop.productNo));
 console.log("productKind: " + prop.productKind);
-console.log("product: " + JSON.parse(JSON.stringify(prop.product)));
+console.log("product: " , JSON.parse(JSON.stringify(prop.product)));
 console.log("no: " + prop.no, typeof(prop.no));
 console.log("kind: " + prop.kind);
 

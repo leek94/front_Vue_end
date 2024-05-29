@@ -197,7 +197,13 @@
                     <li class="nav-item">
                        <RouterLink to="/Ch05DataDelivery/Exam01Props"
                                  class="nav-link">
-                            Exam01Props: 부모에서 자식으로(Props 방식)
+                            Exam01Props: 부모에서 자식으로 (Props 방식)
+                        </RouterLink>
+                    </li>
+                    <li class="nav-item">
+                       <RouterLink to="/Ch05DataDelivery/Exam02EventEmit"
+                                 class="nav-link">
+                            Exam02EventEmit: 자식에서 부모로 (Event 방식)
                         </RouterLink>
                     </li>
                     

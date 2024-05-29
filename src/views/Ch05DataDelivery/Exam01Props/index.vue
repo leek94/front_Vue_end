@@ -23,7 +23,7 @@
             <hr/>
             <ChildC propA="문자열"
                     :propB="5"
-                    :propC="['뷰',5]"
+                    :propC="'뷰'"
                     :propD="'프론트엔드'"
                     :propF="{message: 'Thanks'}"
                     :propG="['yellow','green']"
