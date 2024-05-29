@@ -16,9 +16,9 @@ import { inject } from "vue";
 
 const message = inject("message");
 
-console.log("message.data1.value: "+ message.data1.value);
-console.log("message.data2.value.name1: "+message.data2.value.name1);
-console.log("message.data2.value.name2: "+message.data2.value.name2);
+console.log("message.data1.value: " + message.data1.value);
+console.log("message.data2.value.name1: " + message.data2.value.name1);
+console.log("message.data2.value.name2: " + message.data2.value.name2);
 
 // 데이터 변경 함수
 // 자식에서 데이터 변경시 부모도 변경

@@ -1,10 +1,11 @@
 import { createStore } from 'vuex'
+import counter from "./counter.js"
 
 //store 객체를 생성
 const store = createStore({
   // 루트 상태를 정의 -> 기능 마다 저장되는 상태 ex) 멤버 기능, 쇼핑몰 기능 등등 .js / .js로 모듈로 만들 수 있다
   state: {
-    userId: ""
+    userId: "white"
   },
 
   // 루트 상태를 읽는 메소드 정의 -> get
@@ -29,7 +30,7 @@ const store = createStore({
       // ...3초 소요
       if(true){
         // 로그인 성공
-        resolve({result: "success", userId:"summer"}); // 성공시 data로 매개값이 들어감
+        resolve({result: "success", userId:payload.userId}); // 성공시 data로 매개값이 들어감
       } else {
         // 로그인 실패
         reject({result:"fail" ,reason:"password is wrong"}); // 실패시 error로 매개값이 들어감
@@ -53,7 +54,8 @@ const store = createStore({
 
   //루트 하위의 상태를 정의
   modules: {
-
+    counter: counter // 이름 같으면 생략 가능 counter 만 적어도 됨
+    // counter -> 속성명이 나중에 namespace에 적혀서 중복을 제거해줌
   }
 })
 

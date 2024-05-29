@@ -17,15 +17,16 @@ const count = ref(0);
 
 //Lifecycle Hook 정의
 onMounted(() =>{
-    console.info("UpdateHook 컴포넌트가 마운트됨")
+    console.info("mountHook 컴포넌트가 마운트됨")
     count.value = 100;
+    
     const mybutton = document.querySelector("#mybutton") // 마운트 되고는 사용해도 찾을 수 있는데
 });
 
 // const mybutton = document.querySelector("#mybutton") // 이렇게 onMounted 밖에서 실행시키면 DOM에 올라가기 전에 실행되서 찾을 수 없음
 
 onUnmounted(() =>{
-    console.info("unUpdateHook 컴포넌트가 언마운트됨")
+    console.info("unMountHook 컴포넌트가 언마운트됨")
 });
 
 onBeforeUpdate(() =>{
