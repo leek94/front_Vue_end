@@ -4,6 +4,7 @@ import Ch02ComponentRouting from './Ch02ComponentRouting';
 import Ch03DataBinding from './Ch03DataBinding';
 import Ch04EventHandlingWatch from './Ch04EventHandlingWatch'
 import Ch05DataDelivery from './Ch05DataDelivery'
+import Ch06LifecycleHook from './Ch06LifecycleHook'
 const routes = [
   {
     path: '/',
@@ -15,7 +16,8 @@ const routes = [
   ...Ch02ComponentRouting, 
   ...Ch03DataBinding,
   ...Ch04EventHandlingWatch,
-  ...Ch05DataDelivery
+  ...Ch05DataDelivery,
+  ...Ch06LifecycleHook
 ]
 
 const router = createRouter({

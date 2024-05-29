@@ -31,6 +31,7 @@ let modalDialogC = null;
 
 // 라이프 사이클에 대해서 나중에 배움 onMouted
 // 컴포넌트가 생성되고, DOM 부착될 때 자동으로 실행되는 콜백
+// DOM에 컴포넌트가 들어간 상태인 Mounted 상태가 되어야 id값으로 쿼리 샐렉트로 찾을 수 있음
 onMounted(() => {
     modalDialogA = new Modal(document.querySelector("#dialogA"));
     modalDialogB = new Modal(document.querySelector("#dialogB"));

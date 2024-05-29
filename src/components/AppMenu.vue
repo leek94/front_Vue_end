@@ -191,7 +191,7 @@
                 Ch05. EventHandling & Watch
                 </button>
             </h2>
-            <div id="collapse5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -213,6 +213,35 @@
                         </RouterLink>
                     </li>
                     
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapse6" 
+                aria-expanded="true" aria-controls="collapse6">
+                Ch06. Lifecycle Hook
+                </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                       <RouterLink to="/Ch06LifecycleHook/Exam01LifecycleHook"
+                                 class="nav-link">
+                        Exam01LifecycleHook: 라이프 사이클 훅
+                        </RouterLink>
+                    </li>
+                    <li class="nav-item">
+                       <RouterLink to="/Ch06LifecycleHook/Exam02DomElementRef"
+                                 class="nav-link">
+                            Exam02DomElementRef: DOM 요소 참조
+                        </RouterLink>
+                    </li>
+
                 </ul>
                 </div>
             </div>
