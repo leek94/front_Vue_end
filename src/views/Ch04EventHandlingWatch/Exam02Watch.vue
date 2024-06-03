@@ -26,12 +26,12 @@ import { ref, watch } from 'vue';
 let userId = ref("");
 
 // 상태 감시
-watch(userId, (newUserId, oldUserId) => {
-    console.group("userId 변경 감시");
-    console.log("newUserId: " + newUserId);
-    console.log("oldUserId: " + oldUserId);
-    console.groupEnd("");
-})
+// watch(userId, (newUserId, oldUserId) => {
+//     console.group("userId 변경 감시");
+//     console.log("newUserId: " + newUserId);
+//     console.log("oldUserId: " + oldUserId);
+//     console.groupEnd("");
+// })
 
 // 상태 생성
 let product = ref({
@@ -59,7 +59,7 @@ watch(product, (newProduct, oldProduct) => {
 }, { deep: true });
 // deep 속성에 true를 옵션을 주면 객체 자체 뿐만 아니라 속성이 변경된 것도 watch로 볼 수 있음
 
-// 특정 속성만 변경 감시 / 화살표 함수가 리턴하는 값만 감시하겠다라는 의미 => 문법임
+//특정 속성만 변경 감시 / 화살표 함수가 리턴하는 값만 감시하겠다라는 의미 => 문법임
 watch(() => product.value.price, (newPrice, oldPrice)=>{
     console.group("price 속성만 변경 감시");
     console.log("newPrice: "+ newPrice);
@@ -68,27 +68,28 @@ watch(() => product.value.price, (newPrice, oldPrice)=>{
 })
 
 //복수개의 상태를 감시할 경우 -> 복잡하게 이렇게 사용하지 말고 watch를 여러개 작성하자!!!
-watch([userId, product], ([newUserId, newProduct], [oldUserId, oldProduct]) =>{
-    console.group("복수개의 상태를 감시할 경우");
-    console.log("newUserId: "+ newUserId);
-    console.log("oldUserId: "+ oldUserId);
-    console.log("newPrice: ", JSON.parse(JSON.stringify(newProduct)));
-    console.log("oldPrice: ", JSON.parse(JSON.stringify(oldProduct)));
-    console.groupEnd("");
-});
+// watch([userId, product], ([newUserId, newProduct], [oldUserId, oldProduct]) =>{
+//     console.group("복수개의 상태를 감시할 경우");
+//     console.log("newUserId: "+ newUserId);
+//     console.log("oldUserId: "+ oldUserId);
+//     console.log("newPrice: ", JSON.parse(JSON.stringify(newProduct)));
+//     console.log("oldPrice: ", JSON.parse(JSON.stringify(oldProduct)));
+//     console.groupEnd("");
+// });
 
 function handleProductChange() {
     
-    // 속성만 변경 -> 속성만 변경시 watch가 실행이 안됨
-    product.value.name = 90000000;
+   
 
 
     //객체 자체가 변경됨
-    product.value = {
-        name: "제네시스",
-        company: "현대",
-        price: 80000000
-    }
+    // product.value = {
+    //     name: "제네시스",
+    //     company: "현대",
+    //     price: 80000000
+    // }
+     // 속성만 변경 -> 속성만 변경시 watch가 실행이 안됨
+     product.value.price = 90000000;
 }
 
 

@@ -7,13 +7,13 @@
                                                                 <!-- 함수 참조 -->
                 <button class="btn btn-danger btn-sm me-2" @click="handleBtn1">버튼1</button>
                                                          <!-- 함수 호출 매개값 있음 / 내장 이벤트 객체 전달 -->
-                <button class="btn btn-info btn-sm me-2" @click="handleBtn2('vue is good', $event)" >버튼1</button>
+                <button class="btn btn-info btn-sm me-2" @click="handleBtn2('vue is good', $event)" >버튼2</button>
             </div>
 
             <div class="input-group mb-3">
                 <span class="input-group-text">아이디1</span>
                 <input class="form-control" type="text" name="userID" :value="userID" @keyup="handleInput($event)"/>
-                <!-- v-model을 사용하지 않았기 때문에 단방향 바인딩 -->
+                <!-- v-model을 사용하지 않았기 때문에 단방향 바인딩 인데 함수를 통해서 -->
             </div>
 
             <div class="input-group mb-3">
@@ -22,8 +22,8 @@
                 <!-- 양방향 바인딩  -->
             </div>
 
-            <div>입력내용:{{ userID }}</div>
-
+            <div>입력내용: {{ userID }}</div>
+            
             <hr/>
 
             <div>

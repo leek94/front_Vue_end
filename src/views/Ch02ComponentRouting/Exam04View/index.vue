@@ -9,6 +9,7 @@
                 <p><Router-Link :to="`/Ch02ComponentRouting/` + `Exam01View`">Exam01View</Router-Link></p>
                 <p><Router-Link :to="{path: '/Ch02ComponentRouting/Exam01View'}">Exam01View</Router-Link></p>
                 <p><Router-Link :to="{name: 'Exam01View'}">Exam01View</Router-Link></p>
+                <!-- 위의 path와 name은 라우터에 적힌 path와 name에서 매핑함 -->
 
 
                 <hr/>

@@ -10,7 +10,7 @@
             <UIComponentB id="uiComponentB" class="bg-danger" style="color: black;"
                     @click="handleClick"/>
             <!-- id값은 UIComponent의 루트 요소에 값이 들어감 -->
-            <UIComponentC id="uiComponentA" class="bg-info" style="color: orange;"
+            <UIComponentC id="uiComponentC" class="bg-info" style="color: orange;"
                     @click="handleClick"/>
 
         </div>

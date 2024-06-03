@@ -15,8 +15,8 @@
             <slot name="body"><p>다이얼로그 내용</p></slot>
           </div>
           <div class="modal-footer">
+            <!-- slot -->
             <slot name="footer">
-              <!-- slot -->
               <button type="button" class="btn btn-info btn-sm" data-bs-dismiss="modal">확인</button>
               <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">닫기</button>
             </slot>

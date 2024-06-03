@@ -27,25 +27,25 @@
 
             <div class="mb-4">
                 <h5>:class="변수 | 객체 | 배열"</h5>
-                <div class="mb-2 fw-bold text-info">아름다운 풍경</div>
-                <div class="mb-3" :class="className1">아름다운 풍경</div>
+                <div class="mb-2 fw-bold text-info">아름다운 풍경1</div>
+                <div class="mb-3" :class="className1">아름다운 풍경2</div>
                 <!--변수 1개 | class와 :class가 둘다 있으면 + 되어짐 mr-3 fw-bold 둘다 들어감-->
 
-                <div class="mb-3" :class="[className1, className2]">아름다운 풍경</div> 
-                <!--변수 여러개 | 배열이 들어가서 mr-3 fw-bold text-danger 3개 다 들어감 -->
+                <div class="mb-3" :class="[className1, className2]">아름다운 풍경3</div> 
+                <!--변수 여러개 | 배열이 들어가서 mb-3 fw-bold text-danger 3개 다 들어감 -->
 
-                <div class="mb-3" :class="{'fw-bold' : isBold, 'text-danger' : isRed}">아름다운 풍경</div> 
+                <div class="mb-3" :class="{'fw-bold' : isBold, 'text-danger' : isRed}">아름다운 풍경4</div> 
                 <!-- 변수 여러개 (원하는 상황에만 사용 가능하게)| 자바스크립트를 넣을 경우 속성 : 값 형태로 작성, 속성명 = 클래스명 / 값은 변수를 통해서 제어 -->
             </div>
 
             <div class="mb-4">
                 <h5>:style="변수 | 객체 | 배열"</h5>
-                <div style="margin-bottom: 10px; font-weight: bold; color: #ffa500">아름다운 풍경</div>
+                <div style="margin-bottom: 10px; font-weight: bold; color: #ffa500">아름다운 풍경1</div>
 
-                <div style="margin-bottom: 10px;" :style="[style1, style2]">아름다운 풍경</div> 
+                <div style="margin-bottom: 10px;" :style="[style1, style2]">아름다운 풍경2</div> 
                 <!-- 배열 사용해서 style 값 변수로 넣어주기 -->
 
-                <div style="margin-bottom: 10px;" :style="{'font-weight': fontWeight,'color': textColor }">아름다운 풍경</div> 
+                <div style="margin-bottom: 10px;" :style="{'font-weight': fontWeight,'color': textColor }">아름다운 풍경3</div> 
                 <!-- 스타일의 이름 : 스타일의 값(변수 처리 가능) -->
                
             </div>

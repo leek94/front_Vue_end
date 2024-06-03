@@ -7,9 +7,10 @@
             <!-- 계층적으로 $store.state 까지는 루트의 상태 $store.state.counter는 하위 루트의 상태 -->
             <!-- count는 하위 모듈의 상태 -->
             <p>count 단방향 바인딩: {{ $store.getters["counter/getCount"] }}</p>
+            <!-- 하위 모듈 getters를 사용해서 호출할 경우 이런식으로 해야함 -->
             <p>count 단방향 바인딩: {{ getCount() }}</p>
             <p>count 단방향 바인딩: {{ computedCount }}</p>
-            <p>count 양방향 바인딩: <input type="text" v-model="$store.state.counter.count"/></p>
+            <p>count 양방향 바인딩: <input type="number" v-model="$store.state.counter.count"/></p>
             
             <hr/>
 
@@ -42,6 +43,7 @@ const computedCount = computed(() => {
 
 function changeByMutation() {
     store.commit("counter/setCount", 1)
+    // 하위 모듈을 찾으려면 앞에 counter/를 붙여야함
 }
 
 function changeByAction() {

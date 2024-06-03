@@ -10,7 +10,7 @@ const store = createStore({
 
   // 루트 상태를 읽는 메소드 정의 -> get
   getters: {
-    getUserId(state, getters, rootState, rootGetters) {
+   getUserId(state, getters, rootState, rootGetters) {
       return state.userId;
     }
   },

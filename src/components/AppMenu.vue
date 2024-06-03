@@ -188,7 +188,7 @@
                 <button class="accordion-button fw-bold" type="button" 
                 data-bs-toggle="collapse" data-bs-target="#collapse5" 
                 aria-expanded="true" aria-controls="collapse5">
-                Ch05. EventHandling & Watch
+                Ch05. Data Delivery
                 </button>
             </h2>
             <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -255,7 +255,7 @@
                 Ch07. Vuex State Management
                 </button>
             </h2>
-            <div id="collapse" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div id="collapse" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -270,6 +270,30 @@
                         Exam02CounterState: counter 상태 읽기 및 변경
                         </RouterLink>
                     </li>
+
+                </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapse8" 
+                aria-expanded="true" aria-controls="collapse8">
+                Ch08. Rest API
+                </button>
+            </h2>
+            <div id="collapse" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                       <RouterLink to="/Ch08RestAPI/Exam01Promise"
+                                 class="nav-link">
+                        Exam01Promise: Promise 비동기 처리
+                        </RouterLink>
+                    </li>
+                    
 
                 </ul>
                 </div>
